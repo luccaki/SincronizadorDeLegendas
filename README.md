@@ -1,8 +1,11 @@
 # SincronizadorDeLegendas
 #### Projeito feito para adicionar um offset no tempo de exibição das legendas
-######Foi feito o deploy da aplicação no Azure em um Web App Service
-######Pode ser acessado apartir desse link: https://sincronizadordelegendas.azurewebsites.net/
-######Desenvolvido usando o novo .NET 5 e C# 9
+
+###### Foi feito o deploy da aplicação no Azure em um Web App Service
+###### Pode ser acessado apartir desse link: https://sincronizadordelegendas.azurewebsites.net/
+
+###### Desenvolvido usando o novo .NET 5 e C# 9
+
 ![Imgur](https://i.imgur.com/qO6XYJi.png)
 ###### Contém um input para arquivos .srt;
 ###### Contém mais cinco inputs para definir o offset:
