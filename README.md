@@ -10,7 +10,7 @@
 ###### Contém um input para arquivos .srt;
 ###### Contém mais cinco inputs para definir o offset:
 ###### 1. + ou - / para definir se o offset será positivo ou negativo, para adiantar ou atrasar a exibição da legenda;
-###### 2. 0 a 100 / para definir a quantidade de horas que será feito o offset;
+###### 2. 0 a 999 / para definir a quantidade de horas que será feito o offset;
 ###### 3. 0 a 59 / para definir a quantidade de minutos que será feito o offset;
 ###### 4. 0 a 59 / para definir a quantidade de segundos que será feito o offset;
 ###### 5. 0 a 999 / para definir a quantidade de milisegundos que será feito o offset;
