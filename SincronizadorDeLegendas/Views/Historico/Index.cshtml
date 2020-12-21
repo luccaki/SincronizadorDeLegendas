@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+@using SincronizadorDeLegendas.Controllers
+
+<div class="text-center">
+    <h1 class="display-4">Histórico</h1>
+</div>
+
+<div class="list-group container">
+    @foreach (var a in Model)
+    {
+    <div class="row">
+        <div class="col mb-2">
+            <a href="/Historico/Download/@a.Id" class="list-group-item list-group-item-action">
+                <span class="badge badge-primary badge-pill float-left mr-5 mt-1">@a.QtdDownloads</span>
+                @a.Nome
+
+                <span class="badge badge-pill float-right mt-1">@a.EnviadoEm.ToString("dd/MM/yyyy HH:mm:ss")</span>
+            </a>
+        </div>
+        <div class="col-2 ml-2">
+            <a class="btn btn-danger mt-1" href="/Historico/Delete/@a.Id">X</a>
+        </div>
+    </div>
+    }
+</div>

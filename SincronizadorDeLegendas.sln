@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SincronizadorDeLegendas", "SincronizadorDeLegendas\SincronizadorDeLegendas.csproj", "{20692611-955B-4884-A8F4-826706C5E699}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20692611-955B-4884-A8F4-826706C5E699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20692611-955B-4884-A8F4-826706C5E699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20692611-955B-4884-A8F4-826706C5E699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20692611-955B-4884-A8F4-826706C5E699}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53D9BA16-C5CB-4BB0-B811-3B6F07E0F1E0}
+	EndGlobalSection
+EndGlobal

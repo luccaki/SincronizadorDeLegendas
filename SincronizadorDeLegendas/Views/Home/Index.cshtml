@@ -1,0 +1,58 @@
+﻿@using SincronizadorDeLegendas.Controllers
+@model Entrada
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem vindo</h1>
+    <p>Para saber mais sobre o projeto acesse: <a href="https://github.com/luccaki">github.com/luccaki</a>.</p>
+</div>
+
+<div class="container, row">
+    <div class="col-6 offset-3">
+        <form enctype="multipart/form-data" method="post" class="form-group">
+            <div class="row, text-center"><strong>SubRip Subtitles Adjuster</strong></div>
+            <div class="row, m-2"><input class="form-control" asp-for="Arquivos" type="file" value="Choose file" onchange="validate(this)" /></div>
+            <div class="row no-gutters m-2">
+                <div class="col">
+                    <select class="form-control" asp-for="Offset" value="+">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                    </select>
+                </div>
+                <div class="col"><input class="form-control" asp-for="Horas" type="number" value="0" min="0" max="999" /></div>
+                <div class="col d-inline-flex">:<input class="form-control" asp-for="Minutos" type="number" value="0" min="0" max="59" /></div>
+                <div class="col d-inline-flex">:<input class="form-control" asp-for="Segundos" type="number" value="0" min="0" max="59" /></div>
+                <div class="col d-inline-flex">,<input class="form-control" asp-for="Milisegundos" type="number" value="0" min="0" max="999" /></div>
+            </div>
+            <small class="form-text, text-muted, m-1">Inserir o offset no formato: HH:mm:ss,SSS</small>
+            <div class="row, m-1"><span class="alert-danger" asp-validation-for="Arquivos"></span></div>
+            <div class="row, m-1"><span class="alert-danger" asp-validation-for="Horas"></span></div>
+            <div class="row, m-1"><span class="alert-danger" asp-validation-for="Minutos"></span></div>
+            <div class="row, m-1"><span class="alert-danger" asp-validation-for="Segundos"></span></div>
+            <div class="row, m-1"><span class="alert-danger" asp-validation-for="Milisegundos"></span></div>
+            <div class="row, m-2, float-none">
+                <div class="float-left"><input class="btn btn-primary" type="submit" name="submit" value="submit" /></div>
+                <div class="float-right"><a href="/Historico">open history --></a></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+
+<script>
+    function validate(elem) {
+        if (elem.value.includes(".srt")) {
+            return true;
+        } else {
+            alert("Aceitamos apenas arquivos .srt");
+            document.getElementById("Arquivos").value = "";
+            elem.focus();
+            return false;
+        }
+    }
+</script>
