@@ -19,3 +19,8 @@
 ###### Um click no box da legenda já realiza o Download dela;
 ###### Um número na frente dizendo a quantidade de Downloads;
 ###### Um botão a direita para excluir a legenda;
+
+###### Aproveitando o tema do projeto foi feito também a aplicação em um Blazor App para fins de aprendizegem:
+###### https://github.com/luccaki/BlazorApp
+###### Site: https://blazorappsincronizadordelegendas.azurewebsites.net/
+###### Ficou com um design mais elegante
